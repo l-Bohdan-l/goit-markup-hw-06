@@ -433,7 +433,30 @@
                     <use href="./images/sprite.svg#icon-close"></use>
                 </svg>
             </button>
-
+            <form action="#" class="modal-form">
+                <p class="modal-form-head">Оставьте свои данные, мы вам перезвоним</p>
+                <label for="name" class="modal-form-field">
+                    Имя
+                </label>
+                <input type="text" name="user-name" class="modal-form-input" id="name" required>
+                <label for="phone" class="modal-form-field">
+                    Телефон
+                </label>
+                <input type="tel" name="user-phone" class="modal-form-input" id="phone" required>
+                <label for="email" class="modal-form-field">
+                    Почта
+                </label>
+                <input type="email" name="user-email" class="modal-form-input" id="email" required>
+                <label for="comment" class="modal-form-field">
+                    Комментарий
+                </label>
+                <textarea name="user-messsage" id="comment" class="modal-form-comment"></textarea>
+                <label for="checkbox-policy" class="modal-form-checkbox-policy">
+                    Соглашаюсь с рассылкой и принимаю <a class="modal-form-policy-link" href="">Условия договора</a> 
+                </label>
+                <input type="checkbox" name="user-policy" class="modal-form-input" id="checkbox-policy" required>
+                <button type="submit" class="modal-form-btn">Отправить</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
