@@ -711,9 +711,97 @@ body {
 
 .modal-form-input {
   width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 44px;
+  padding-left: 42px;
 }
 
 .modal-form-comment {
   width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  resize: none;
+  padding: 12px 16px;
 }
-/* ============= END Modal Window=============*/
+
+.modal-form-comment:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+.modal-form-wrapper {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.modal-form-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal-form-input:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+.modal-form-input:focus + .modal-form-icon {
+  fill: var(--accent-color);
+}
+
+.modal-form-field {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--fifth-accent-color);
+  margin-bottom: 4px;
+}
+
+.modal-form-comment::placeholder {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  /* transition: background-color 2500ms ease-in-out 0s; */
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+}
+
+.modal-form-checkbox-policy {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--fifth-accent-color);
+}
+
+.modal-form-checkbox-policy::before {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 2px solid #000000;
+  border-radius: 2px;
+}
+
+.modal-form-input-checkbox:checked + .modal-form-checkbox-policy::before {
+  background-image: url(../images/modal-window/icon-check.svg);
+  background-color: var(--accent-color);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* ============= END Modal Window=============*/ ;

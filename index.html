@@ -438,23 +438,39 @@
                 <label for="name" class="modal-form-field">
                     Имя
                 </label>
-                <input type="text" name="user-name" class="modal-form-input" id="name" required>
+                <div class="modal-form-wrapper">
+                    <input type="text" name="user-name" class="modal-form-input" id="name" minlength="2" required>
+                    <svg class="modal-form-icon" width="18px" height="18px">
+                    <use href="./images/sprite.svg#icon-person-logo"></use>
+                    </svg>  
+                </div>
                 <label for="phone" class="modal-form-field">
                     Телефон
                 </label>
-                <input type="tel" name="user-phone" class="modal-form-input" id="phone" required>
+                <div class="modal-form-wrapper">
+                    <input type="tel" name="user-phone" class="modal-form-input" id="phone" required 
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="050-111-11-11">
+                    <svg class="modal-form-icon" width="18px" height="18px">
+                        <use href="./images/sprite.svg#icon-phone-logo"></use>
+                    </svg>  
+                </div>
                 <label for="email" class="modal-form-field">
                     Почта
                 </label>
-                <input type="email" name="user-email" class="modal-form-input" id="email" required>
+                <div class="modal-form-wrapper">
+                    <input type="email" name="user-email" class="modal-form-input" id="email" required>
+                    <svg class="modal-form-icon" width="18px" height="18px">
+                        <use href="./images/sprite.svg#icon-email-logo"></use>
+                    </svg>
+                </div>          
                 <label for="comment" class="modal-form-field">
                     Комментарий
                 </label>
-                <textarea name="user-messsage" id="comment" class="modal-form-comment"></textarea>
+                <textarea name="user-messsage" id="comment" class="modal-form-comment" placeholder="Введите текст"></textarea>
+                <input type="checkbox" name="user-policy" class="modal-form-input-checkbox" id="checkbox-policy" required>
                 <label for="checkbox-policy" class="modal-form-checkbox-policy">
                     Соглашаюсь с рассылкой и принимаю <a class="modal-form-policy-link" href="">Условия договора</a> 
                 </label>
-                <input type="checkbox" name="user-policy" class="modal-form-input" id="checkbox-policy" required>
                 <button type="submit" class="modal-form-btn">Отправить</button>
             </form>
         </div>
