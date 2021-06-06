@@ -423,6 +423,20 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-form">
+                <form action="" class="footer-sbscr-form">
+                  <p class="footer-form-head">Подпишитесь на рассылку</p> 
+                   <div class="footer-form-wrapper">
+                        <input type="email" name="user-email-sbscr" class="footer-sbscr-form-input" placeholder="E-mail" required>
+                        <button type="submit" class="footer-sbscr-btn">
+                        Подписаться
+                        <svg class="footer-sbscr-form-icon" width="24px" height="24px">
+                            <use href="./images/sprite.svg#icon-send"></use>
+                        </svg>
+                            </button>  
+                   </div> 
+                </form>
+            </div>
         </div>
     </footer>
     <!-- modal window-->
@@ -467,7 +481,7 @@
                     Комментарий
                 </label>
                 <textarea name="user-messsage" id="comment" class="modal-form-comment" placeholder="Введите текст"></textarea>
-                <input type="checkbox" name="user-policy" class="modal-form-input-checkbox" id="checkbox-policy" required>
+                <input type="checkbox" name="user-policy" class="modal-form-input-checkbox visually-hidden" id="checkbox-policy" required>
                 <label for="checkbox-policy" class="modal-form-checkbox-policy">
                     Соглашаюсь с рассылкой и принимаю <a class="modal-form-policy-link" href="">Условия договора</a> 
                 </label>
